@@ -1,9 +1,9 @@
-function App() {
+import Card from "./Card";
+
+export default function App() {
   return (
-    <div>
-      <h1>Hello World</h1>
-    </div>
+    <main>
+      <Card />
+    </main>
   );
 }
-
-export default App;
