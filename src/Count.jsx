@@ -1,3 +1,12 @@
-export default function Count() {
-    return <p>0</p>;
+export default function Count({ number }) {
+  return (
+    <>
+      <CountTitle />
+      <p>{number}</p>
+    </>
+  );
+}
+
+function CountTitle() {
+  return <h2>Current Count is:</h2>;
 }

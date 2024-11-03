@@ -1,8 +1,9 @@
-export default function CountButtons() {
+export default function CountButtons(props) {
+  const {increment, decrement} = props;
   return (
     <div>
-      <button>-</button>
-      <button>+</button>
+      <button onClick={decrement}>-</button>
+      <button onClick={increment}>+</button>
     </div>
   );
 }

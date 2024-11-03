@@ -1,3 +1,4 @@
-export default function ResetButton() {
-  return <button>Reset</button>;
+export default function ResetButton(props) {
+  const { reset } = props;
+  return <button onClick={reset}>Reset</button>;
 }
