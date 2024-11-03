@@ -18,7 +18,7 @@ export default function Card() {
   const reset = () => setCount(0);
 
   return (
-    <div>
+    <div className="card">
       <Title />
       <Count number={count} />
       <ResetButton reset={reset} />
