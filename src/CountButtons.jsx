@@ -1,24 +1,10 @@
-import { MinusIcon, PlusIcon } from "@radix-ui/react-icons";
+import IconButton from "./IconButton";
 
-export default function CountButtons({ setCount }) {
-  const decreaseCount = () => {
-    setCount((prev) => {
-      if (prev > 0) return prev - 1;
-      return prev;
-    });
-  };
-
+export default function CountButtons({ setCount, locked }) {
   return (
     <div className="button-container">
-      <button className="count-btn" onClick={decreaseCount}>
-        <MinusIcon className="count-btn-icon" />
-      </button>
-      <button
-        className="count-btn"
-        onClick={() => setCount((prev) => prev + 1)}
-      >
-        <PlusIcon className="count-btn-icon" />
-      </button>
+      <IconButton type="minus" locked={locked} setCount={setCount} />
+      <IconButton type="plus" locked={locked} setCount={setCount} />
     </div>
   );
 }
