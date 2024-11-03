@@ -1,8 +1,10 @@
-# React + Vite
+# Fancy Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This react project app is based on ByteGrad's react course and it allows you to use a counter from 0 to 5. You can reset the counter as well. Once you go 5, the app is locked and ask you to buy a pro version. (There isn't a way to buy a pro version it's just for demo.) You can reset the counter to unlock the counter again.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to install and run
+To run the project, do the following steps:
+1. `npm install`
+2. `npm run dev`
+3. Open your favorite browser and type: `http://localhost:5173/`
