@@ -13,9 +13,10 @@ export default function Card() {
   useEffect(() => {
     const handleKeydown = (e) => {
       if (e.code === "Space") {
-        if (count < LIMIT_COUNT) {
-          setCount((prev) => prev + 1);
-        }
+        setCount((prev) => {
+          if (prev < LIMIT_COUNT) return prev + 1;
+          return prev;
+        });
       }
     };
 
@@ -24,7 +25,7 @@ export default function Card() {
     return () => {
       window.removeEventListener("keydown", handleKeydown);
     };
-  }, [count]);
+  }, []);
 
   return (
     <div className={`card ${locked ? "card--limit" : ""}`}>
